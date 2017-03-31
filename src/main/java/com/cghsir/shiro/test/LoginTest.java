@@ -19,7 +19,7 @@ public class LoginTest {
 	@Test
 	public void testHelloWorld(){
 		//1.初始化securityManager工厂，通过ini方式初始化SecurityManager
-		Factory<org.apache.shiro.mgt.SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro.ini");
+		Factory<org.apache.shiro.mgt.SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro-realm.ini");
 		//2.获取 securityManager 实例  并绑定给utils
 		org.apache.shiro.mgt.SecurityManager securityManager = factory.getInstance();
 		SecurityUtils.setSecurityManager(securityManager);
