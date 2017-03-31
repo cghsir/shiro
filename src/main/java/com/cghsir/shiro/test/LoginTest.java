@@ -25,7 +25,7 @@ public class LoginTest {
 		SecurityUtils.setSecurityManager(securityManager);
 		//3.得到subject及创建用户名/密码身份验证token(即用户/凭证)
 		Subject subject = SecurityUtils.getSubject();
-		UsernamePasswordToken token = new UsernamePasswordToken("zhang","123");
+		UsernamePasswordToken token = new UsernamePasswordToken("zhang","abc");
 		try {
 			//4.登录，即身份验证
 			subject.login(token);
